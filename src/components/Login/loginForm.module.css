@@ -1,0 +1,138 @@
+/* loginForm.module.css */
+
+/* Contenedor de toda la página */
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: rgb(255, 255, 255);
+}
+
+/* Contenedor central del formulario */
+.container {
+  width: 100%;
+  max-width: 400px;
+  backdrop-filter: blur(8px);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    background: url('/fondoRegistrar.jpg') no-repeat center center/cover;
+}
+
+/* Wrapper interno para centrar el contenido */
+.formWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Título del formulario */
+.tituloForm {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Formulario */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Grupo de label + input */
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup label {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.formGroup input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+/* Botón de submit */
+.btnSubmit {
+  background-color: #e81ae8;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.btnSubmit:hover {
+  background-color: #ad16c1;
+}
+
+/* Mensaje de error */
+.error {
+  color: red;
+  margin-top: 10px;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Link de registro */
+.registerLink {
+  color: #ffffff;
+  cursor: pointer;
+  text-decoration: underline;
+  text-align: center;
+  display: block;
+  margin-top: 10px;
+}
+
+/* ----------------- MEDIA QUERIES ----------------- */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .container {
+    max-width: 90%;
+    padding: 25px;
+  }
+
+  .formGroup input {
+    font-size: 0.95rem;
+  }
+
+  .btnSubmit {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+}
+
+/* Celulares */
+@media (max-width: 480px) {
+  .container {
+    max-width: 95%;
+    padding: 20px;
+  }
+
+  .tituloForm {
+    font-size: 1.5rem;
+  }
+
+  .formGroup input {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .btnSubmit {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+}

@@ -1,0 +1,42 @@
+/* Escribir aqui los estilos globales de la app */
+
+*, *::after, *::before {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html,
+body {
+    font-family: var(--font-primary);
+    background-color: var(--bg-ligth);
+    color: var(--color-dark);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#__next {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%; 
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+main {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    background-color: var(--bg-secondary);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-family: var(--font-secundary);
+}

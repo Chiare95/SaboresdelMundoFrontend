@@ -1,0 +1,45 @@
+.home_container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: calc(100vh - 80px); /* ajusta al footer */
+  background: url(/asada-carne-kebaps-verduras-wallpaper-preview.jpg) center/cover no-repeat;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.content {
+  color: #fff;
+  max-width: 80%;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.content h2 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.content p {
+  font-size: 2.2rem;
+}
+
+@media (max-width: 1024px) {
+  .content h2 {
+    font-size: 2rem;
+  }
+  .content p {
+    font-size: 1.2rem;
+  }
+}

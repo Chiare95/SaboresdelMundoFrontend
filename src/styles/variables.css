@@ -1,0 +1,14 @@
+:root{
+   --color-primary: #0070f3;
+   --color-secondary: #78b0f9;
+   --color-ligth: #FEF6E8;
+   --color-dark: #000000;
+
+   --bg-primary: #0070f3;
+   --bg-secondary: #4D1202;
+   --bg-ligth: #FEF6E8;
+   --bg-dark: #333;
+
+   --font-primary: 'Segoe UI', sans-serif;
+   --font-secondary: Arial;
+}

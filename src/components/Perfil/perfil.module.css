@@ -1,0 +1,107 @@
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+/* ===== Tabla ===== */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background: #fafafa;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.table th,
+.table td {
+  border: 1px solid #e0e0e0;
+  padding: 12px;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.table th {
+  background: #f4f6f9;
+  color: #444;
+  font-weight: 600;
+}
+
+.table tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+.table tr:hover {
+  background: #f1faff;
+  transition: background 0.2s ease-in-out;
+}
+
+/* ===== Acciones ===== */
+.acciones {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.acciones button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Botón editar */
+.acciones button:first-child {
+  background: #4cafef;
+  color: white;
+}
+
+.acciones button:first-child:hover {
+  background: #1d8cd6;
+  transform: translateY(-2px);
+}
+
+/* Botón cancelar */
+.acciones button:last-child {
+  background: #f44336;
+  color: white;
+}
+
+.acciones button:last-child:hover {
+  background: #d32f2f;
+  transform: translateY(-2px);
+}
+
+
+/* Responsivo para tablets y móviles */
+@media (max-width: 1024px) {
+  .container {
+    margin-left: 0; /* sin sidebar en mobile */
+    padding: 1.5rem;
+  }
+
+  .item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .item button {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+}

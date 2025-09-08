@@ -1,0 +1,249 @@
+/* --- Navbar base --- */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #4D1202;
+  color: white;
+  padding: 0.5rem 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Botón menú hamburguesa (solo en móvil) */
+.button_menu {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+  display: none;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo_img {
+  width: 40px;
+  height: 40px;
+}
+
+.logo_text {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Links de navegación */
+.nav_links {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.nav_links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.nav_links a:hover {
+  text-decoration: underline;
+}
+
+/* Carrito */
+.button_cart {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+/* Avatar */
+.avatar_container {
+  position: relative;
+  margin-left: 4rem;
+  margin-top: 10px;
+}
+
+.avatar_circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #837777;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+}
+
+.avatar_initial {
+  font-weight: bold;
+}
+
+/* Menú del avatar */
+.avatarMenu {
+  position: absolute;
+  top: 50px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  min-width: 150px;
+  z-index: 2000;
+}
+
+.avatarMenu a,
+.avatarMenu button {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+}
+
+.avatarMenu a:hover,
+.avatarMenu button:hover {
+  background: #f2f2f2;
+}
+
+
+@media (min-width: 760px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 250px;        
+        height: 100vh;
+        padding: 2rem 2rem;
+        position: fixed;
+        top: 0;
+        left: 0;
+        text-align: center;
+        margin-right: auto;
+    }
+    
+    .button_menu {
+        display: none;
+    }
+
+    .nav_links {
+        display: flex !important;
+        flex-direction: column;
+        gap: 1.5rem;
+        color: #ffffff;
+        margin-left: 35px;
+    }
+
+    .logo {
+        flex-direction: column;
+        align-items: center;
+        gap: .5rem;
+    }
+
+    .logo_img {
+        width: 170px;
+        height: auto;
+    }
+
+    .logo_text{
+        color: #ffffff00;
+    }
+
+    .button_cart {
+        margin-top: 35px;
+        margin-bottom: 25px;
+        margin-left: 36%;
+    }
+
+    :global(main) {
+        margin-left: 250px;
+    }
+}
+/* --- RESPONSIVE --- */
+
+/* --- RESPONSIVE: Tablet y móvil --- */
+@media (max-width: 1024px) {
+
+  .button_menu {
+    display: block;
+  }
+
+  .nav_links {
+    display: none;
+    flex-direction: column;
+    background: #333;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .show_menu {
+    display: flex;
+  }
+
+  .avatar_container {
+    position: relative;
+    margin: 0;
+  }
+
+  .avatar_circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #c083f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  /* Menu desplegable del avatar */
+  .avatarMenu {
+    position: absolute;
+    top: 50px;
+    left: 0; 
+    right: 0rem;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 0.5rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    min-width: 150px;
+    z-index: 2000;
+  }
+
+  .avatarMenu a,
+  .avatarMenu button {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 1rem 1rem 1rem;
+    text-align: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+    right: inherit;
+  }
+
+  .avatarMenu a:hover,
+  .avatarMenu button:hover {
+    background: #f2f2f2;
+  }
+}

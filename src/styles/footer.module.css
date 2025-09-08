@@ -1,0 +1,35 @@
+
+.footer_content {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+
+.footer_social {
+    margin-top: 1rem;
+}
+
+.footer_social a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.footer_social a:hover{
+    color: #ff4081;
+}
+
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--bg-secondary);
+    color: white;
+}
+
+
+@media (min-width: 768px) {
+    .footer {
+        margin-left: 250px; 
+    }
+}
