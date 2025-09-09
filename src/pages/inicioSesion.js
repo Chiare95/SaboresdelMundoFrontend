@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Navegacion from "../components/Navegation/NavBarAvatar"
 import LoginForm from "@/components/Login/LoginForm"
 
 
@@ -14,11 +13,6 @@ export default function RegistrarPage() {
          <link rel="icon" href="/logo.png" />
 
       </Head>
-
-      <header>
-         <Navegacion />
-
-      </header>
 
       <main>
          <LoginForm/>

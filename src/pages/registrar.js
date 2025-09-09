@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Navegacion from "../components/Navegation/NavBarAvatar"
 import FormularioRegistro from "@/components/FormularioRegistro"
 
 
@@ -13,11 +12,6 @@ export default function RegistrarPage() {
          <link rel="icon" href="/logo.png" />
          <title>Sabores del Mundo</title>
       </Head>
-
-      <header>
-         <Navegacion />
-
-      </header>
 
       <main>
          <FormularioRegistro/>
