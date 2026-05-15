@@ -47,12 +47,6 @@ La interfaz fue desarrollada para adaptarse correctamente a:
 
 ---
 
-# 📸 Capturas del proyecto
-
-Agrega aquí imágenes de tu proyecto.
-
----
-
 # ⚙️ Instalación
 
 Clonar repositorio:
